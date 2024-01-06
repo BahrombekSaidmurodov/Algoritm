@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+bool primeNumber(int n)
+{
+    bool j=true;
+    for(int i=2;i*i<=n;i++)
+    {
+        if(n%i==0)
+            {
+                j=false;
+                break;
+            }
+    }
+    return j;
+}
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<primeNumber(n);
+    return 0;
+}
